@@ -1,4 +1,4 @@
-Next-Generation Wireless Air Mouse Ring
+#NexaRing: Next-Generation Wireless Air Mouse Ring
 
 This project showcases a compact, wearable air mouse ring that combines convenience and functionality for seamless interaction with devices. Designed for next-generation applications, it uses motion sensors to track gestures, enabling precise cursor control and gesture-based inputs without a traditional mouse. The ring communicates wirelessly (e.g., via Bluetooth) with your computer or smart device, offering an ergonomic and futuristic alternative for presentations, gaming, or daily use.
 
