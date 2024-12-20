@@ -56,3 +56,20 @@ For actions, unique gestures are defined in addition to regular motion tracking.
 
 ## Softwares
 
+### Noise filters
+- Low-Pass Filter
+- Average Filter Algorithm
+- [Kalman Filter Algorithm](https://www.sciencedirect.com/topics/social-sciences/kalman-filter)
+- [Exponential Moving Average (EMA)](https://www.strike.money/technical-analysis/ema)
+
+
+### Algorithms used for optimize and control curser movements
+
+- Threshold-Based State Handling: hresholds are used to determine when the cursor should start or stop moving. The start threshold specifies the minimum acceleration required to initiate movement, while the stop threshold defines the point below which movement ceases.This approach prevents the cursor from responding to minor or unintentional sensor fluctuations.
+-  Bounding and Clamping: To ensure the cursor remains within the visible screen area, the program applies a bounding and clamping algorithm. The new cursor position is calculated by adding the movement to the current position, but it is constrained between 0 and the screen’s width or height. The formula for bounding is:
+
+<h3>new_x=max(0,min(current_x+move_x,screen_width−1))</h3>
+
+<h3>new_y=max(0,min(current_y−move_y,screen_height−1))</h3>
+
+This ensures that the cursor does not move off-screen, maintaining usability and preventing errors. The bounding logic is implemented in the control mouse function. 
